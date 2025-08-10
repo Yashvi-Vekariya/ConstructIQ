@@ -1,0 +1,304 @@
+{
+  "dataset_info": {
+    "name": "Smart Home Planner - Clean Construction Dataset",
+    "version": "1.0",
+    "created": "2025-08-09T21:40:54.679545",
+    "total_records": 9885,
+    "total_features": 17,
+    "cleaning_stats": {
+      "files_processed": 5,
+      "total_rows_before": 26825,
+      "total_rows_after": 26824,
+      "columns_standardized": 0,
+      "missing_values_handled": 0,
+      "outliers_removed": 1
+    }
+  },
+  "features": {
+    "project_id": {
+      "description": "Unique identifier for each construction project",
+      "data_type": "object",
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 9885,
+      "value_counts": {
+        "PROJ_house-price-dataset-of-india_House Price India_cleaned_0000": 1,
+        "PROJ_house-price-dataset-of-india_House Price India_cleaned_0001": 1,
+        "PROJ_house-price-dataset-of-india_House Price India_cleaned_0002": 1,
+        "PROJ_house-price-dataset-of-india_House Price India_cleaned_0003": 1,
+        "PROJ_house-price-dataset-of-india_House Price India_cleaned_0004": 1,
+        "PROJ_house-price-dataset-of-india_House Price India_cleaned_0005": 1,
+        "PROJ_house-price-dataset-of-india_House Price India_cleaned_0006": 1,
+        "PROJ_house-price-dataset-of-india_House Price India_cleaned_0007": 1,
+        "PROJ_house-price-dataset-of-india_House Price India_cleaned_0008": 1,
+        "PROJ_house-price-dataset-of-india_House Price India_cleaned_0009": 1
+      },
+      "sample_values": [
+        "PROJ_house-price-dataset-of-india_House Price India_cleaned_0000",
+        "PROJ_house-price-dataset-of-india_House Price India_cleaned_0001",
+        "PROJ_house-price-dataset-of-india_House Price India_cleaned_0002",
+        "PROJ_house-price-dataset-of-india_House Price India_cleaned_0003",
+        "PROJ_house-price-dataset-of-india_House Price India_cleaned_0004"
+      ]
+    },
+    "area_sqft": {
+      "description": "Built-up area in square feet",
+      "data_type": "int64",
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 672,
+      "min": 370.0,
+      "max": 12050.0,
+      "mean": 2073.5608497723824,
+      "std": 982.289509131593,
+      "quartiles": {
+        "25%": 1360.0,
+        "50%": 1870.0,
+        "75%": 2580.0
+      }
+    },
+    "floors": {
+      "description": "Number of floors in the building",
+      "data_type": "float64",
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 6,
+      "min": 1.0,
+      "max": 3.5,
+      "mean": 1.5211431461810825,
+      "std": 0.5615748908183016,
+      "quartiles": {
+        "25%": 1.0,
+        "50%": 1.5,
+        "75%": 2.0
+      }
+    },
+    "bedrooms": {
+      "description": "Number of bedrooms",
+      "data_type": "int64",
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 11,
+      "min": 1.0,
+      "max": 33.0,
+      "mean": 3.2914516944865957,
+      "std": 0.9564223935262803,
+      "quartiles": {
+        "25%": 3.0,
+        "50%": 3.0,
+        "75%": 4.0
+      }
+    },
+    "bathrooms": {
+      "description": "Number of bathrooms",
+      "data_type": "float64",
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 28,
+      "min": 0.5,
+      "max": 8.0,
+      "mean": 2.1156550328780983,
+      "std": 0.8035776490216074,
+      "quartiles": {
+        "25%": 1.5,
+        "50%": 2.25,
+        "75%": 2.5
+      }
+    },
+    "location": {
+      "description": "City or area location",
+      "data_type": "int64",
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 672,
+      "min": 370.0,
+      "max": 12050.0,
+      "mean": 2073.5608497723824,
+      "std": 982.289509131593,
+      "quartiles": {
+        "25%": 1360.0,
+        "50%": 1870.0,
+        "75%": 2580.0
+      }
+    },
+    "location_tier": {
+      "description": "Location categorization (Metro/Tier1/Tier2)",
+      "data_type": "object",
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 1,
+      "value_counts": {
+        "Tier2": 9885
+      },
+      "sample_values": [
+        "Tier2",
+        "Tier2",
+        "Tier2",
+        "Tier2",
+        "Tier2"
+      ]
+    },
+    "location_encoded": {
+      "description": "Numeric encoding of location tier",
+      "data_type": "int64",
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 1,
+      "min": 1.0,
+      "max": 1.0,
+      "mean": 1.0,
+      "std": 0.0,
+      "quartiles": {
+        "25%": 1.0,
+        "50%": 1.0,
+        "75%": 1.0
+      }
+    },
+    "quality_tier": {
+      "description": "Construction quality level",
+      "data_type": "int64",
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 10,
+      "min": 4.0,
+      "max": 13.0,
+      "mean": 7.811633788568538,
+      "std": 1.2483604024019546,
+      "quartiles": {
+        "25%": 7.0,
+        "50%": 8.0,
+        "75%": 8.0
+      }
+    },
+    "quality_encoded": {
+      "description": "Numeric encoding of quality tier",
+      "data_type": "int64",
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 1,
+      "min": 2.0,
+      "max": 2.0,
+      "mean": 2.0,
+      "std": 0.0,
+      "quartiles": {
+        "25%": 2.0,
+        "50%": 2.0,
+        "75%": 2.0
+      }
+    },
+    "construction_type": {
+      "description": "Type of construction (Residential/Commercial)",
+      "data_type": "object",
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 1,
+      "value_counts": {
+        "Residential": 9885
+      },
+      "sample_values": [
+        "Residential",
+        "Residential",
+        "Residential",
+        "Residential",
+        "Residential"
+      ]
+    },
+    "total_cost": {
+      "description": "Total construction cost in INR",
+      "data_type": "int64",
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 2231,
+      "min": 115000.0,
+      "max": 7700000.0,
+      "mean": 634574.4502781993,
+      "std": 402844.04937372025,
+      "quartiles": {
+        "25%": 405000.0,
+        "50%": 542500.0,
+        "75%": 740000.0
+      }
+    },
+    "cost_per_sqft": {
+      "description": "Cost per square foot in INR",
+      "data_type": "float64",
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 7925,
+      "min": 200.27777777777777,
+      "max": 800.0,
+      "mean": 309.4269185499369,
+      "std": 94.54267992673044,
+      "quartiles": {
+        "25%": 240.93264248704662,
+        "50%": 283.50515463917526,
+        "75%": 351.2
+      }
+    },
+    "cement_cost": {
+      "description": "Cost of cement materials in INR",
+      "data_type": "float64",
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 1,
+      "min": 0.0,
+      "max": 0.0,
+      "mean": 0.0,
+      "std": 0.0,
+      "quartiles": {
+        "25%": 0.0,
+        "50%": 0.0,
+        "75%": 0.0
+      }
+    },
+    "steel_cost": {
+      "description": "Cost of steel materials in INR",
+      "data_type": "float64",
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 1,
+      "min": 0.0,
+      "max": 0.0,
+      "mean": 0.0,
+      "std": 0.0,
+      "quartiles": {
+        "25%": 0.0,
+        "50%": 0.0,
+        "75%": 0.0
+      }
+    },
+    "labor_cost": {
+      "description": "Labor cost in INR",
+      "data_type": "float64",
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 1,
+      "min": 0.0,
+      "max": 0.0,
+      "mean": 0.0,
+      "std": 0.0,
+      "quartiles": {
+        "25%": 0.0,
+        "50%": 0.0,
+        "75%": 0.0
+      }
+    },
+    "data_source": {
+      "description": "Source of the data record",
+      "data_type": "object",
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 1,
+      "value_counts": {
+        "Unknown": 9885
+      },
+      "sample_values": [
+        "Unknown",
+        "Unknown",
+        "Unknown",
+        "Unknown",
+        "Unknown"
+      ]
+    }
+  }
+}

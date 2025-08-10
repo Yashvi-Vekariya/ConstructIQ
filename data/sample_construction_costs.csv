@@ -1,0 +1,6 @@
+area_sqft,floors,location,quality_tier,cement_cost,steel_cost,labor_cost,total_cost
+800,1,Rural,Basic,32000,28000,80000,140000
+1200,1,Semi-Urban,Standard,54000,48000,120000,222000
+1500,2,Urban,Standard,67500,60000,150000,277500
+2000,2,Metro,Premium,90000,80000,200000,370000
+2500,3,Metro,Luxury,112500,100000,250000,462500

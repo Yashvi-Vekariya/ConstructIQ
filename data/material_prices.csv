@@ -1,0 +1,6 @@
+material,basic_price,premium_price,location_factor
+Cement (50kg bag),350,420,1.0
+Steel (per kg),65,75,1.15
+Bricks (per 1000),8000,12000,1.25
+Sand (per cubic ft),1200,1500,1.4
+Paint (per liter),180,280,1.6
